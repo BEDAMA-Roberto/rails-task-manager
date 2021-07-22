@@ -1,0 +1,6 @@
+<h1><% @task.title %><%= @tasks.completed %></h1>
+
+<small>@tasks.details</small>
+<%= link_to "Volver al listado", tasks_path %> ||
+
+<%= link_to "Borrar", tasks_path(@tasks), method: :delete, data: {confir: Estas Seguro?} %>

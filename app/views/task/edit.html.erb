@@ -1,0 +1,28 @@
+<%= form_for @tasks do |r| %>
+<%= r.label :title, "insert title" %>
+<%= r.text_field :title %>
+
+<%= r.label :detail, "insert detail" %>
+<%= r.text_field :detail %>
+
+<%= r.label :completed, "insert status" %>
+<%= r.text_field :completed %>
+
+<%= f.submit %>
+<% end %>
+
+
+<%# <form action="/tasks" method="patch">
+
+<label for="Title"> In title tasks</label>
+<input type="text" title="task[name]" value="">
+
+<label for="details"> In title tasks</label>
+<input type="text" title="task[details]" value="">
+
+<label for="completed"> In title tasks</label>
+<input type="text" title="task[completed]" value="">
+
+<input type="submit">
+
+</form> %>
