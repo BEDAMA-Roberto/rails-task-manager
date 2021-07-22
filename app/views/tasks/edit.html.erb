@@ -1,14 +1,14 @@
-<%= form_for @tasks do |r| %>
+<%= form_for @task do |r| %>
 <%= r.label :title, "insert title" %>
 <%= r.text_field :title %>
 
-<%= r.label :detail, "insert detail" %>
-<%= r.text_field :detail %>
+<%= r.label :details, "insert detail" %>
+<%= r.text_field :details %>
 
 <%= r.label :completed, "insert status" %>
 <%= r.text_field :completed %>
 
-<%= f.submit %>
+<%= r.submit %>
 <% end %>
 
 

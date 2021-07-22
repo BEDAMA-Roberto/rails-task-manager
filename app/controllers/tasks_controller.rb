@@ -1,19 +1,19 @@
-class TaskController < ApplicationController
+class TasksController < ApplicationController
     def index
       @tasks = Task.all
     end
     def show
-      @tasks = Task.find(params[:id])
+      @task = Task.find(params[:id])
     end
     def new
-      @tasks = Task.new
+      @instancia = Task.new
     end
     def create
-        @tasks = Task.new(task_params).save
-        redirect_to tasks_path
+      @tasks = Task.new(task_params).save
+      redirect_to tasks_path
     end
     def edit
-      @tasks = Task.find(params[:id])
+      @task = Task.find(params[:id])
     end
     def update
       @tasks = Task.find(params[:id])
